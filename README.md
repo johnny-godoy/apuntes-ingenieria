@@ -1,2 +1,2 @@
-# johnny-godoy.github.io
-Prueba para apuntes
+# Apuntes DIM
+Visitar johnny-godoy.github.io para ver mis apuntes.
