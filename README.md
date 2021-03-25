@@ -1,2 +1,3 @@
 # Apuntes DIM
-Visitar johnny-godoy.github.io para ver mis apuntes.
+
+Wiki personal de matemáticas creada a través de TiddlyRoam, usando el plugin de TeXZilla.
