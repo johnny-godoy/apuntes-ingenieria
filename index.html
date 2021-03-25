@@ -389,6 +389,8 @@ Error message and password prompt
 
 <li>Clase 1: Definiciones básicas, recuerdos de Probabilidades</li>
 
+<li>Clase 2 Funcional: Espacio dual, corolarios de Hahn-Banach y versión geométrica</li>
+
 <li>Clase 3 Markov: Construcciones de Cadenas</li>
 
 <li>Clase 4 Funcional: Espacio bidual</li>
@@ -408,6 +410,8 @@ Error message and password prompt
 <li>Ejercicio Resuelto</li>
 
 <li>Espacio dual</li>
+
+<li>Espacio dual es Banach</li>
 
 <li>Espacio ortogonal</li>
 
@@ -723,7 +727,7 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 <pre>yes</pre>
 </div>
 <div created="20210323014529062" modified="20210324191013400" title="$:/config/DefaultSidebarTab">
-<pre>$:/core/ui/SideBar/Open</pre>
+<pre>Semestre 7</pre>
 </div>
 <div created="20200510024843460" modified="20200603121638626" tags="$:/giffmex/stroll $:/giffmex/blinks" title="$:/config/EditorTypeMappings/text/vnd.tiddlywiki">
 <pre>comptext</pre>
@@ -11773,7 +11777,7 @@ There are 2 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]
 <pre>yes</pre>
 </div>
 <div created="20201231112737163" modified="20210324195459400" title="$:/state/sidebar">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
 <div created="20201231113345823" modified="20201231143141082" title="$:/state/strollhometabs-338615865">
 <pre>Recent updates to Stroll</pre>
@@ -11785,7 +11789,7 @@ There are 2 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
 <div created="20210323124358600" modified="20210324190818700" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Basics</pre>
+<pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
 <div created="20210323021402508" modified="20210324194037100" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
@@ -11794,7 +11798,7 @@ There are 2 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]
 <pre>$:/core/ui/ControlPanel/Stylesheets</pre>
 </div>
 <div created="20210323021351979" modified="20210324194035400" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20201231113427134" modified="20210323163801200" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
@@ -11838,7 +11842,7 @@ There are 2 fields, which are used by [[$:/plugins/wikilabs/link-to-tabs/styles]
 <div bag="default" revision="1" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div list="[[Sobre este apunte]] [[Semestre 7]] Diario [[LaTeX Macros]] Pendiente [[Ejercicio Pendiente]] Teorema Definición" title="$:/StoryList">
+<div list="[[Clase 2 Funcional: Espacio dual, corolarios de Hahn-Banach y versión geométrica]] [[Un hiperplano es cerrado ssi su f es continua]] [[Sobre este apunte]] [[Semestre 7]] Diario [[LaTeX Macros]] Pendiente [[Ejercicio Pendiente]] Teorema Definición" title="$:/StoryList">
 <pre></pre>
 </div>
 <div bag="default" created="20200414145220556" modified="20210323022044983" revision="0" title="$:/theme" type="text/vnd.tiddlywiki">
@@ -12087,6 +12091,52 @@ X_n := X_{n-1} + \begin{cases}1\text{ con probabilidad } p\\
 -1 \text{ con probabilidad } 1 - p \end{cases}, (X_n)$$ es una cadena de Markov.
 </pre>
 </div>
+<div tags="" title="Clase 2 Funcional: Espacio dual, corolarios de Hahn-Banach y versión geométrica">
+<pre>Dado $$E$$ un evn, definimos su [[Espacio dual]]. Se demostrarán varios corolarios al [[Teorema de Hahn-Banach Analítico]] relacionados con este concepto.
+
+''Corolario'' Sea $$G$$ sev, $$g\in\Lel\Cel(G, \R)$$. Entonces, $$g$$ se puede extender a todo $$E$$, y su extensión cumple $$\Vert f\Vert_{E^*} = \Vert g \Vert_{G^*}$$
+
+
+''Demostración'' Por caracterización de continuidad de las funciones lineales, se tiene:
+
+$$
+|g(x)|\leq \Vert g\Vert_{G^*} \Vert x\Vert =: p(x)
+$$
+
+Por [[Teorema de Hahn-Banach Analítico]], existe una extensión $$f$$, que además cumple $$|f(x)|\leq |p(x)| = \Vert g\Vert_{G^*} \Vert x\Vert \implies \Vert f\Vert_{E^*} \leq \Vert g\Vert_{G^*} $$. Más aún, $$\Vert f\Vert_{E^*} \geq \Vert f\Vert_{G^*} = \Vert g\Vert_{G^*} $$, por lo cual se cumple lo pedido.
+
+''Corolario'' $$\forall x\in E, \exists f\in E^*$$ tal que $$f(x)=\Vert x\Vert^2, \Vert f\Vert = \Vert x\Vert$$
+
+''Demostración'' Con el subespacio $$G=\langle x\rangle$$, consideramos $$g(z) = g(tx) = t\Vert x\Vert^2$$ definida en $$G$$, que es claramente lineal, y más aún, $$|g(z)| = |g(tx)|= t\Vert x\Vert^2 = (t\Vert x\Vert)\Vert x\Vert = \Vert z\Vert\Vert x\Vert\implies \Vert g\Vert_{G^*} = \Vert x\Vert$$, por lo cual $$g$$ es lineal continua en $$G$$. Así, se considera $$f$$ del corolario anterior, que cumple
+
+\[
+f(x) = g(x) = 1\Vert x\Vert^2; \Vert f\Vert_{E^*} = \Vert f\Vert_{G^*} = \Vert x\Vert
+\]
+
+Notación: $$\langle f, x\rangle := f(x)$$. Lo bueno de esta notación es que permite ver a $$f(x)$$ como si fuera un producto interno - en efecto es bilineal, y cumple una desigualdad tipo Cauchy–Schwarz que es igual de útil.
+
+''Corolario'' $$ \Vert x\Vert = \max_{\Vert f\Vert \leq 1} |\langle f, x\rangle|$$
+
+''Demostración'' Sea $$x\in E, f\in E^*. \Vert f \Vert \leq 1$$, se tiene que $$|\langle f, x\rangle|\leq \Vertf\Vert\Vert x\Vert\leq \Vert x\Vert \implies  \sup_{\Vert f\Vert \leq 1} |\langle f, x\rangle|\leq \Vert x\Vert$$. 
+
+Más aún, consideramos la $$f_x$$ correspondiente a $$x$$ del corolario anterior, que va a cumplir:
+
+\[
+\begin{aligned}
+\Vert f_x\Vert = \Vert x\Vert &amp;\implies \Vert \frac{f_x}{\Vert x\Vert}\Vert = 1\\
+&amp;\implies g(x) := \frac{f_x}{\Vert x\Vert}\in B_{E^*}(0, 1)\\
+|\langle f_x, x\rangle| &amp;= \Vert x\Vert^2\\
+&amp; \Vert x\Vert = |\langle g, x\rangle| \leq  \sup_{\Vert f\Vert \leq 1} |\langle f, x\rangle|\\
+\end{aligned}
+\]
+Así, se concluye lo pedido, pues este supremo se alcanza en $$f=g$$
+
+
+Se procede a definir el [[Hiperplano]], junto a la proposición: [[Un hiperplano es cerrado ssi su f es continua]]. 
+
+Luego, se enuncia el [[Teorema de Hahn-Banach Geométrico Primera Forma]].
+</pre>
+</div>
 <div created="20210323161331000" modified="20210323214728500" tags="[[Procesos de Markov]]" title="Clase 3 Markov: Construcciones de Cadenas" tmap.id="8e07ca2a-fccd-4c22-aa9b-e63b0c272421">
 <pre>Nuestra primera pregunta es:
 
@@ -12209,7 +12259,14 @@ El apellido del Conjunto Lineal puede cambiar en estos casos:
 
 $$
 \Vert f\Vert_{E^*} = \sup_{\Vert x \Vert \leq 1} |f(x)|
-$$</pre>
+$$
+
+''Ver'' [[Espacio dual es Banach]]</pre>
+</div>
+<div tags="Teorema" title="Espacio dual es Banach">
+<pre>Proposición es el título.
+
+''Demostración'' [[Ejercicio Pendiente]]</pre>
 </div>
 <div created="20210324142000900" modified="20210324165155800" tags="Definición" title="Espacio ortogonal" tmap.id="d80a2d31-5cc7-4f9e-b203-9121c7d77299">
 <pre>Dado $$M\subseteq E, N\subseteq E^*$$ evn, se definen los espacios:
@@ -12481,9 +12538,42 @@ Por último, se tiene que $$|g(x)| = |h(x)| \leq p(x)$$ y que $$f\leq g$$, dado 
 
 Por [[Lema de Zorn]], existe un elemento $$F$$ maximal en $$X$$. En particular, $$f\leq F$$, por lo cual $$F$$ es una extensión de $$f$$ dominada por $$p$$, basta ver que su dominio es $$E$$. 
 
-Suponer lo contrario, es decir, $$\exists x\in E\setminus\text{Dom}(F)$$, considerar $$F'$$ definida en $$\text{Dom}(F') = \text{Dom}(F)\oplus \langle x\rangle$$ (sev de $$E$$) como $$F'(y+tx) = F(y)+tF'(x) = F(y) +tc$$, donde la definición está construida para preservar linealidad, y la manera de escribir los elementos es única ya que $$x\notin \text{Dom}(F)$$. Cuando $$t=0$$, se nota que en efecto $$F'$$ extiende a $$F$$, en particular, extiende a $$f$$. 
+Suponer lo contrario, es decir, $$\exists x\in E\setminus\text{Dom}(F)$$. La idea es construir $$F'&gt;F$$, para lograr una contradicción con la maximalidad de $$F$$
 
-[[Pendiente]]: Concluir con una contradicción
+Considerar $$F'$$ definida en $$\text{Dom}(F') = \text{Dom}(F)\oplus \langle x\rangle$$ (sev de $$E$$) como $$F'(y+tx) = F(y)+tF'(x) = F(y) +tc$$, donde la definición está construida para preservar linealidad, y la manera de escribir los elementos es única ya que $$x\notin \text{Dom}(F)$$. Cuando $$t=0$$, se nota que en efecto $$F'$$ extiende a $$F$$, en particular, extiende a $$f$$. 
+
+Dado que $$F'$$ es una extensión de $$F$$ que no cumple $$F'=F$$, para lograr una contradicción de la maximalidad basta ver que $$F\in X$$, y la única condición que falta verificar es que está dominada por $$p$$. Para esto, se separa en dos casos:
+
+* Si $$t&gt;0$$:
+ \[
+\begin{aligned}
+\forall y\in \text{Dom}(F); \frac{f(y)}{t} + c \leq \frac{1}{t}p(y) + tx &amp;\iff f\left(\frac{y}{t}\right) + c \leq p\left(\frac{y}{t}+x \right)\\
+&amp;\iff f\left(y\right) + c \leq p\left(y+x \right)\\
+&amp;\iff c\leq p(y+x)-f(y)\\
+&amp;\iff c\leq p(y+x)-f(y)\\
+\end{aligned}
+\]
+
+* Análogamente, si $$t&lt;0$$:
+ \[
+\begin{aligned}
+\forall y\in \text{Dom}(F); \frac{f(-y)}{t} - c \leq p\left(\frac{-y}{t}-x \right) &amp;\iff f(y)-c\leq p(y-x)\\
+&amp;\iff c\geq f(y)-p(y-x)\\
+\end{aligned}
+\]
+
+Ahora, notando que:
+ \[
+\begin{aligned}
+f(y)+f(z) &amp;= f(y+z)\\
+&amp;\leq p(y+z) = p((y-x) + (z+x))\\
+&amp;\leqp(y-x)+ p(z+x)\\
+\implies f(y) - p(y-x)&amp;\leq p(z+x)-f(z)
+\end{aligned}
+\]
+
+Por tanto, se puede elegir $$c$$ en este intervalo, y esto es suficiente para que $$p$$ domine a $$F'$$, lo cual es una contradicción. Así, el dominio de $$F$$ debe ser $$E$$, concluyendo lo pedido.
+
 </pre>
 </div>
 <div created="20210324134246900" modified="20210324154344500" tags="Desambiguación" title="Teorema de Hahn-Banach Geométrico" tmap.id="fb32db57-2015-4619-8b77-84fd04acc986">
@@ -12504,7 +12594,10 @@ Cabe destacar que si el espacio es de dimensión finita, no se requiere ninguna 
 [[Pendiente]]</pre>
 </div>
 <div created="20210324154515600" modified="20210324154528500" tags="Teorema" title="Un hiperplano es cerrado ssi su f es continua" tmap.id="8d80e3f2-ff4c-4d1d-8466-5db221bd6666">
-<pre>[[Pendiente]]</pre>
+<pre>Proposición en el título
+
+''Demostración''
+[[Ejercicio Pendiente]]</pre>
 </div>
 <div created="20210323193604400" modified="20210323193944800" tags="Definición" title="Variable aleatoria" tmap.id="4b5b195e-aab3-49f5-bd92-1a05db83e353">
 <pre>Dado un espacio de probabilidad $$(\Omega, \Fel, \P)$$ y un espacio medible $$(S, \mathcal{S})$$, se dice que $$X\in\mathcal{M}(\Fel, \mathcal{S})$$ es una variable aleatoria a valores en $$S$$.</pre>
