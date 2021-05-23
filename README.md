@@ -1,6 +1,6 @@
 # Apuntes
 
-Estos son mis apuntes en el estilo de una wiki de los cursos que estoy tomando en séptimo semestre. Están disponibles [https://johnny-godoy.github.io/](acá)
+Estos son mis apuntes en el estilo de una wiki de los cursos que estoy tomando. Están disponibles [acá](https://johnny-godoy.github.io/). 
 
 # Créditos
 Este apunte se basa en las clases de docentes de la FCFM, en particular de los departamentos DIM, DCC y A2IC. Se utiliza el material entregado en los cursos, como los apuntes y diapositivas, pero de forma reestructurada como una wiki. Las fuentes específicas de cada curso se explicitan en su Tiddler correspondiente. 
