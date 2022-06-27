@@ -1,6 +1,6 @@
 # [Apuntes](https://johnny-godoy.github.io/)
 
-Estos son mis apuntes en el estilo de una wiki de los cursos que estoy tomando, segmentado en pequeños pedazos llamados Tiddlers. Actualmente tiene los cursos:
+Estos son mis apuntes en el estilo de una wiki de los cursos que tomé en mi séptimo semestre estudiando Ingenería Civil Matemática, segmentado en pequeños pedazos llamados Tiddlers. Contiene material para los cursos:
 
 * Análisis Funcional
 * Procesos de Markov
@@ -8,6 +8,9 @@ Estos son mis apuntes en el estilo de una wiki de los cursos que estoy tomando, 
 * Aprendizaje de Máquinas
 * Minería de Datos
 * Retroalimentación de Competencias Comunicativas
+
+Pasando a octavo semestre, detuve la actualización de este repositorio. Los cursos que comencé a anotar, pero quedaron con solamnente un par de clases son:
+
 * Ecuaciones en Derivadas Parciales
 * Control Óptimo
 * Simulación Estocástica
@@ -21,4 +24,4 @@ Este apunte se escribe con [TiddlyRoam](https://tiddlyroam.org/) con el plugin [
 
 # Disponibilidad del apunte
 
-La matemática se escribe en MathML, por lo que está disponible en Firefox y Safari, pero navegadores basados en Chromium no lo soportan. Esto no parece tener solución fácil, pues el plugin de MathML era el único que permitía el uso de macros. 
+Los segmentos en LaTeX se escriben con MathML, por lo que está disponible en Firefox y Safari, pero navegadores basados en Chromium no lo soportan. Esto no parece tener solución fácil, pues el plugin de MathML era el único que permitía el uso de macros. 
