@@ -1,4 +1,4 @@
-# [Apuntes](https://johnny-godoy.github.io/)
+# [Apuntes](https://johnny-godoy.github.io/apuntes-ingenieria/)
 
 Estos son mis apuntes en el estilo de una wiki de los cursos que tomé en mi séptimo semestre estudiando Ingenería Civil Matemática, segmentado en pequeños pedazos llamados Tiddlers. Contiene material para los cursos:
 
